@@ -1,6 +1,21 @@
+
 # Logic Circuit Simulation
 
-This repository contains a logic circuit simulation implemented using Logisim, a digital logic circuit simulator. The simulation aims to replicate a simple game scenario and consists of two main parts:
+This repository contains a logic circuit simulation implemented using Logisim, a digital logic circuit simulator. The simulation aims to replicate a simple game scenario and consists of two main parts A and B:
+
+## Overview
+
+The final circuit consists of two subcircuits: one for Part A, labeled as "logic P=Q," and one for Part B, labeled as "counter."
+Part A of the circuit is responsible for performing logical operations between two variables, P and Q, which can range from 0 to 7. Various operations such as addition, subtraction, and comparison are implemented. The logic is based on the relationships P = Q+1, P = Q-1, P = Q+2, and P = Q-2. By combining inputs of Q using OR gates and combining Q inputs with P inputs ranging from 0-7 using AND gates, successful combinations yield an output of 1.
+
+Part B of the circuit utilizes a counter to count successful and unsuccessful combinations produced by Part A. A button input is used to count items, maintaining connectivity to the main circuit. A NOT gate is employed for counting purposes. Additionally, a comparator with a constant value of 3 resets the counter after three unsuccessful combinations, while another comparator with a constant value of 6, followed by a D flip-flop, controls the simulation by stopping it after six successful combinations.
+
+## Implementation Details
+
+- A 3-to-8 bit decoder is used to decode the values of P and Q, as they can range from 0-7.
+- OR gates are used to combine inputs of Q, while AND gates are used to combine Q inputs with P inputs ranging from 0-7.
+- A NOT gate is utilized for counting successful and unsuccessful combinations.
+- Comparators with constant values of 3 and 6, along with a D flip-flop, are used for controlling the simulation.
 
 ## Part A: Logic Operations (P=Q)
 
@@ -18,6 +33,10 @@ To run the simulation:
 3. Run the simulation to observe the behavior of the logic circuit.
 
 Feel free to contribute by suggesting improvements or adding new features to the logic circuit simulation.
+
+## Acknowledgments
+
+Thank you for your interest in this logic circuit simulation!
 
 ## License
 
