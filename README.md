@@ -10,10 +10,7 @@ Part A of the circuit is responsible for performing logical operations between t
 
 Part B of the circuit utilizes a counter to count successful and unsuccessful combinations produced by Part A. A button input is used to count items, maintaining connectivity to the main circuit. A NOT gate is employed for counting purposes. Additionally, a comparator with a constant value of 3 resets the counter after three unsuccessful combinations, while another comparator with a constant value of 6, followed by a D flip-flop, controls the simulation by stopping it after six successful combinations.
 
-
-<div align="Center">
-    <img src="/screenshots/img1.png" width="600px"</img>
-</div>
+    <img src="/screenshots/img1.png" width="700px"</img>
 
 ## Implementation Details
 
