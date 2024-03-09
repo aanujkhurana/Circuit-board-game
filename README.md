@@ -1,5 +1,3 @@
-# Circuit-board-game
-
 # Circuit Function
 
 This is my implementation for simulation of a simple game. The final Circuit has 2 subcircuits: one for part A labelled as “logic P=Q” and one for part B labelled as “counter”.
